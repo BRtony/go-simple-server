@@ -35,7 +35,7 @@ import (
 
 var (
 	logger *zap.Logger
-	port   = getEnv("PORT", "8080")
+	port   = getEnv("APP_PORT", "8080")
 	host   = getEnv("HOST", "0.0.0.0")
 )
 
