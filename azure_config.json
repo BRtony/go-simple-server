@@ -1,0 +1,26 @@
+{
+    "resource_group": "latam-ro-group",
+    "location": "brazilsouth",
+    "webapp": {
+        "name": "latam-ro-database",
+        "plan": "latam-ro-plan",
+        "sku": "F1",
+        "runtime": "GO|1.21"
+    },
+    "database": {
+        "name": "latam-ro-db",
+        "tier": "Burstable",
+        "sku": "Standard_B1ms",
+        "version": "14",
+        "storage": "32"
+    },
+    "settings": {
+        "DB_HOST": "latam-ro-db.brazilsouth.azure.com",
+        "DB_PORT": "5432",
+        "DB_USER": "seu-usuario",
+        "DB_PASSWORD": "sua-senha",
+        "DB_NAME": "postgres",
+        "PORT": "8080",
+        "WEBSITES_PORT": "8080"
+    }
+} 

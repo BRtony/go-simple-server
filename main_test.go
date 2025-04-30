@@ -5,6 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"teste/config"
 	"teste/handlers"
 
 	"github.com/gorilla/mux"
@@ -13,7 +14,8 @@ import (
 
 func TestMonsterEndpoint(t *testing.T) {
 	logger, _ := zap.NewProduction()
-	handler := handlers.NewMonsterHandler(logger)
+	db, _ := config.NewDatabase(logger)
+	handler := handlers.NewMonsterHandler(logger, db)
 
 	req, _ := http.NewRequest("GET", "/api/v1/monsters/1001", nil)
 	rr := httptest.NewRecorder()

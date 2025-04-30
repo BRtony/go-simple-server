@@ -1,0 +1,10 @@
+{
+    "DB_HOST": "latam-ro-db.brazilsouth.azure.com",
+    "DB_PORT": "5432",
+    "DB_USER": "seu-usuario",
+    "DB_PASSWORD": "sua-senha",
+    "DB_NAME": "postgres",
+    "PORT": "8080",
+    "WEBSITES_PORT": "8080",
+    "WEBSITES_CONTAINER_START_TIME_LIMIT": "600"
+} 

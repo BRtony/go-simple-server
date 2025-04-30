@@ -1,0 +1,8 @@
+-- +migrate Down
+DROP TABLE IF EXISTS monster_maps CASCADE;
+DROP TABLE IF EXISTS monster_drops CASCADE;
+DROP TABLE IF EXISTS monster_skills CASCADE;
+DROP TABLE IF EXISTS monster_elemental_damage CASCADE;
+DROP TABLE IF EXISTS monster_stats CASCADE;
+DROP TABLE IF EXISTS monster_attributes CASCADE;
+DROP TABLE IF EXISTS monsters CASCADE; 

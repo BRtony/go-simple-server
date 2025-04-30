@@ -1,0 +1,29 @@
+{
+    "project_id": "rola-db",
+    "region": "us-central1",
+    "services": {
+        "cloud_run": {
+            "service_name": "latam-ro-database",
+            "memory": "512Mi",
+            "cpu": "1",
+            "concurrency": "80",
+            "min_instances": "0",
+            "max_instances": "10"
+        },
+        "cloud_sql": {
+            "instance_name": "latam-ro-db",
+            "database_version": "POSTGRES_14",
+            "tier": "db-f1-micro",
+            "storage_size": "10GB",
+            "region": "us-central1"
+        }
+    },
+    "settings": {
+        "DB_HOST": "/cloudsql/rola-db:us-central1:latam-ro-db",
+        "DB_PORT": "5432",
+        "DB_USER": "postgres",
+        "DB_PASSWORD": "sua-senha",
+        "DB_NAME": "postgres",
+        "PORT": "8080"
+    }
+} 
